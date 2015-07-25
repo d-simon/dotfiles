@@ -33,6 +33,7 @@ binaries=(
   tree
   webkit2png
   youtube-dl
+  mackup
 )
 
 echo "installing binaries..."
@@ -57,7 +58,7 @@ apps=(
   # iterm2-beta
   appcleaner
   spectacle
-  
+
   # Prefpanes / Quicklook plugins
   qlcolorcode
   qlstephen
@@ -92,7 +93,6 @@ apps=(
   # Storage
   arq
   dropbox
-  mackup
   transmit
 
   # Misc
@@ -122,7 +122,7 @@ fonts=(
   font-lato
   font-merriweather
   font-merriweather-sans
-  font-open-sans 
+  font-open-sans
   font-open-sans-condensed
   font-playfair-display
   font-playfair-display-sc
