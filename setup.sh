@@ -53,7 +53,8 @@ if $CONTINUE; then
   cat scripts/*.sh > scripts_cat.sh
 
   cecho 'Run...' $green
-  # bash scripts_cat.sh
+  bash scripts_cat.sh
+  cecho 'Cleanup...' $green
   rm scripts_cat.sh
 
   cecho 'Run osx-for-hackers.sh' $green

@@ -2,7 +2,7 @@
 # Set Lockscreen Information                                                  #
 ###############################################################################
 
-cecho "Do you want to add contact information to your lockscreen (Email/Tel)? (${reset}${green}y${reset}/${red}n${reset})" $green
+echo "Do you want to add contact information to your lockscreen (Email/Tel)? (y/n)"
 read -r response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
   read -p 'Insert your email address >' email
@@ -10,8 +10,7 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 
   sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Email: ${email}\nTel: ${telephone}"
 else
-
-  cecho "Do you want add another message instead? (${reset}${green}y${reset}/${red}n${reset})" $green
+  echo "Do you want add another message instead? (y/n)"
   message=""
   read -r response
   if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
@@ -19,3 +18,4 @@ else
   fi
   sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "${message}"
 fi
+

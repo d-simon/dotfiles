@@ -51,7 +51,7 @@ fi
 
 if ! $CONTINUE; then
   # Check if we're continuing and output a message if not
-  cecho "Please go read the script, it only takes a few minutes" $red
+  cecho "Okay, not running..." $red
   exit
 fi
 
@@ -565,9 +565,9 @@ defaults write com.google.Chrome.canary AppleEnableSwipeNavigateWithScrolls -boo
 # Mail
 ###############################################################################
 
-echo ""
-echo "Setting email addresses to copy as 'foo@example.com' instead of 'Foo Bar <foo@example.com>' in Mail.app"
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+# echo ""
+# echo "Setting email addresses to copy as 'foo@example.com' instead of 'Foo Bar <foo@example.com>' in Mail.app"
+# defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 
 ###############################################################################
