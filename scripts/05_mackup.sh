@@ -2,5 +2,4 @@
 cp "files/.mackup.cfg" "${HOME}/.mackup.cfg"
 
 # Restore
-echo "Restore mackup"
-mackup restore
+echo "NOTE: Restore mackup when you are done with syncing your Dropbox"
