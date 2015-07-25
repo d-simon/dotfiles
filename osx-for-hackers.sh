@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# My fork of the original can be found here
+# https://gist.github.com/d-simon/6dd9f3b6a41ccb005820
+
 # Alot of these configs have been taken from the various places
 # on the web, most from here
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
@@ -30,6 +33,8 @@ CONTINUE=false
 
 echo ""
 cecho "###############################################" $red
+cecho "#              OSX-FOR-HACKERS.SH             #" $red
+cecho "#                                             #" $red
 cecho "#        DO NOT RUN THIS SCRIPT BLINDLY       #" $red
 cecho "#         YOU'LL PROBABLY REGRET IT...        #" $red
 cecho "#                                             #" $red
@@ -37,11 +42,8 @@ cecho "#              READ IT THOROUGHLY             #" $red
 cecho "#         AND EDIT TO SUIT YOUR NEEDS         #" $red
 cecho "###############################################" $red
 echo ""
-
-
-echo ""
 cecho "Have you read through the script you're about to run and " $red
-cecho "understood that it will make changes to your computer? (y/n)" $red
+cecho "understood that it will make changes to your computer? (${reset}${green}y${reset}/${red}n${reset})" $red
 read -r response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
   CONTINUE=true
