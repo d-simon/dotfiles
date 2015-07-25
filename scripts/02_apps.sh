@@ -97,6 +97,7 @@ apps=(
 
   # Misc
   spotify
+  toggldesktop
   transmission
   vlc
 )
