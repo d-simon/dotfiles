@@ -57,6 +57,12 @@ if $CONTINUE; then
   cecho 'Cleanup...' $green
   rm scripts_cat.sh
 
+  cecho "###############################################" $green
+  cecho "#                                             #" $green
+  cecho "#                  ALL DONE!                  #" $green
+  cecho "#                                             #" $green
+  cecho "###############################################" $green
+
   cecho 'Run osx-for-hackers.sh' $green
   sh osx-for-hackers.sh
 fi
