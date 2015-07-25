@@ -136,14 +136,6 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 
 
 ###############################################################################
-# Misc                                                                        #
-###############################################################################
-
-# Set contact information in lock screen
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Email: ${email}\nTel: ${telephone}"
-
-
-###############################################################################
 # Kill (to restart) the needed applications                                   #
 ###############################################################################
 
