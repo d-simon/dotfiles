@@ -20,10 +20,12 @@ brew install homebrew/dupes/grep
 
 binaries=(
   ack
+  cpulimit
   ffmpeg
   git
   graphicsmagick
   hub
+  mackup
   nmap
   nvm
   python
@@ -33,7 +35,6 @@ binaries=(
   tree
   webkit2png
   youtube-dl
-  mackup
 )
 
 echo "installing binaries..."
