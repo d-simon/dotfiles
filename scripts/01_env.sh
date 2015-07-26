@@ -23,4 +23,7 @@ source "$(brew --prefix nvm)/nvm.sh"
 nvm install node
 nvm alias default node
 # install some packages
-npm install --global eslint bower serve 
+npm install --global eslint bower serve
+
+# Install composer
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
